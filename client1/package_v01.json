@@ -1,0 +1,34 @@
+{
+  "name"           : "AdminLTE",
+  "version"        : "3.1.0",
+  "private"        : true,
+  "devDependencies": {
+    "react-scripts": "2.1.8"
+     },
+  "dependencies": {
+    "admin-lte"    : "^3.1.0-rc",
+    "formik"       : "^1.5.2",
+    "react"        : "^16.14.0",
+    "react-dom"    : "^16.14.0",
+    "react-router-dom": "^5.2.0"
+     },
+  "scripts": {
+    "start": "echo npm ERROR: * You must be in an app folder to start app",
+    "test" : "echo npm TEST error: No test specified && exit 1"
+     },
+  "eslintConfig": {
+    "extends": "react-app"
+     },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+       ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+       ]
+     }
+   }

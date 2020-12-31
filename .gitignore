@@ -8,7 +8,5 @@ plugins/
 plugins-unused/
 .eslintcache*
 
-# robin's files
-*_v*
-_*/
+
 
