@@ -1,0 +1,41 @@
+{
+  "name": "!_FormR",
+  "version": "0.30.2",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "4.0.1"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.1",
+    "@material-ui/icons": "^4.11.1",
+    "admin-lte": "^3.1.0-rc",
+    "formik": "^2.2.6",
+    "ra-data-json-server": "^3.9.0",
+    "ra-data-simple-rest": "^3.9.0",
+    "react": "^17.0.1",
+    "react-admin": "^3.9.0",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "scripts": {
+    "start": "echo npm ERROR: * You must be in an app folder to start app",
+    "test": "echo npm TEST error: No test specified && exit 1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

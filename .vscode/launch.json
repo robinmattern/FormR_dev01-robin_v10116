@@ -1,0 +1,93 @@
+{
+     "version": "0.2.0",
+     "configurations": [
+          {
+               "type": "node",
+               "request": "launch",
+               "name": "app1s Server1",
+               "skipFiles": [ "<node_internals>/**" ],
+               "env": { "DEBUG": "sequelize" },
+               "program": "${workspaceFolder}\\server1\\app1s\\server.js"
+          },
+          {
+               "type": "pwa-node",
+               "request": "launch",
+               "name": "app2c Client1",
+               "skipFiles": [ "<node_internals>/**" ],
+               "cwd": "${workspaceFolder}\\client1\\app2c",
+               "runtimeExecutable": "npm",
+               "runtimeArgs": [ "run-script", "start" ]
+          },
+          {
+               "type": "pwa-node",
+               "request": "launch",
+               "name": "app3c Client2",
+               "skipFiles": [ "<node_internals>/**" ],
+               "cwd": "${workspaceFolder}\\client2\\app3c", 
+               "runtimeExecutable": "npm",
+               "runtimeArgs": [ "run-script", "start" ]
+          },
+         {
+               "type": "pwa-node",
+               "request": "launch",
+               "name": "app4c Client2",
+               "skipFiles": [ "<node_internals>/**" ],
+               "cwd": "${workspaceFolder}\\client2\\app4c",
+               "runtimeExecutable": "npm",
+               "runtimeArgs": [ "run-script", "start" ]
+          },
+          {
+               "type": "chrome",
+               "request": "launch",
+               "name": "app4c Chrome",
+               "url": "http://localhost:55304",
+               "webRoot": "${workspaceRoot}/src",
+               "sourceMapPathOverrides": { "webpack:///src/*": "${webRoot}/*" }
+          },
+         {
+               "type": "pwa-node",
+               "request": "launch",
+               "name": "app5c Client2",
+               "skipFiles": [ "<node_internals>/**" ],
+               "cwd": "${workspaceFolder}\\client2\\app5c",
+               "runtimeExecutable": "npm",
+               "runtimeArgs": [ "run-script", "start" ]
+          },
+          {
+                "type": "pwa-node",
+               "request": "launch",
+               "name": "app7s Server2",
+               "skipFiles": [ "<node_internals>/**" ],
+               "cwd": "${workspaceFolder}\\server2\\app7s",
+               "runtimeExecutable": "npm",
+               "runtimeArgs": [ "run-script", "start" ]
+         },
+          {
+               "type": "node",
+               "request": "launch",
+               "name": "app1s testMembers.mjs",
+               "skipFiles": [ "<node_internals>/**" ],
+               "program": "${workspaceFolder}\\server\\app1s\\testMembers.mjs"
+          },
+          {
+               "type": "node",
+               "request": "launch",
+               "name": "app1s testTutorials.mjs",
+               "skipFiles": [ "<node_internals>/**" ],
+               "program": "${workspaceFolder}\\server\\app1s\\testTutorials.mjs"
+          },
+          {
+               "type": "node",
+               "request": "launch",
+               "name": "app1s testTables.mjs",
+               "skipFiles": [ "<node_internals>/**" ],
+               "program": "${workspaceFolder}\\server\\_3\\NJSs\\testTables.mjs"
+          },
+          {
+               "type": "pwa-node",
+               "name": "app2s AsyncCountRowsSeql",
+               "request": "launch",
+               "program": "${workspaceFolder}\\server\\app2s\\AsyncCountRowsSeql.js"
+          }
+     ]
+}
