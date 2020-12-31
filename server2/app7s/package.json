@@ -1,0 +1,13 @@
+{
+  "name": "App9b Server",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+  },
+  "scripts": {
+    "start": "json-server --watch ./api/models/db.json --port 55307 --routes ./api/models/routes.json --middlewares ./api/models/range.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
