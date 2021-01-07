@@ -44,7 +44,7 @@
                "webRoot": "${workspaceRoot}/src",
                "sourceMapPathOverrides": { "webpack:///src/*": "${webRoot}/*" }
           },
-         {
+          {
                "type": "pwa-node",
                "request": "launch",
                "name": "app5c Client2",
@@ -61,7 +61,33 @@
                "cwd": "${workspaceFolder}\\server2\\app7s",
                "runtimeExecutable": "npm",
                "runtimeArgs": [ "run-script", "start" ]
-         },
+          },
+          {
+               "type": "pwa-node",
+               "request": "launch",
+               "name": "app8c Client2",
+               "skipFiles": [ "<node_internals>/**" ],
+               "cwd": "${workspaceFolder}\\client2\\app8c",
+               "runtimeExecutable": "npm",
+               "runtimeArgs": [ "run-script", "start" ]
+          },
+          {
+               "type": "chrome",
+               "request": "launch",
+               "name": "app8c Chrome",
+               "url": "http://localhost:3000",
+               "webRoot": "${workspaceRoot}/src",
+               "sourceMapPathOverrides": { "webpack:///src/*": "${webRoot}/*" }
+          },          
+          {
+               "type": "pwa-node",
+               "request": "launch",
+               "name": "app9c Client2",
+               "skipFiles": [ "<node_internals>/**" ],
+               "cwd": "${workspaceFolder}\\client2\\app9c",
+               "runtimeExecutable": "npm",
+               "runtimeArgs": [ "run-script", "start" ]
+          },
           {
                "type": "node",
                "request": "launch",
