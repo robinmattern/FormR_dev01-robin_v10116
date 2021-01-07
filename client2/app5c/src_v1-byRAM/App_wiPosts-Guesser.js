@@ -31,14 +31,14 @@
           return (
 
             <Admin
-                dataProvider = { dataProvider }  
+                dataProvider = { dataProvider }
 //              dataProvider = { jsonServerProvider( 'https://jsonplaceholder.typicode.com' ) }
 
 
                 >
 {/*           <Resource
                 name         =  "posts"     list = { PostList    } /> */}
-              <Resource name =  "posts"     list = { ListGuesser } /> 
+              <Resource name =  "posts"     list = { ListGuesser } />
 
 {/*           <Resource name =  "users"     list = { ListGuesser } /> */}
               <Resource
