@@ -1,0 +1,70 @@
+
+
+  app8b@0.1.0 C:\WEBs\8020\IODD\React-Admin\Master\app8b
+    +-- concurrently@5.3.0
+    +-- content-range@1.1.1
+    `-- json-server@0.16.3
+
+  app8b-client@0.1.0 C:\WEBs\8020\IODD\React-Admin\Master\app8b\client
+    +-- @material-ui/core@4.11.2
+    +-- ra-data-simple-rest@3.10.4
+    +-- react-admin@3.11.1
+    +-- react-dom@17.0.1
+    +-- react-scripts@4.0.1
+    +-- react@17.0.1
+    `-- web-vitals@0.2.4
+
+
+  app9b-server@0.1.0 C:\WEBs\8020\IODD\React-Admin\Master\app8b\server
+    `-- (empty)
+
+
+
+
+    Size       Date Time        ./*
+ ----------  ----------------  +-------------------------+---------+---------+----------------------------+
+           0  2021-01-02 20:20  .
+           0  2020-12-19 10:43  ./!_BradTraversy React-Admin_Workie
+           0  2020-12-29 21:54  ./client
+          54  2020-12-29 21:54  ./client/.env
+        3759  2021-01-02 20:15  ./client/.eslintcache
+     1713566  2020-12-29 21:50  ./client/package-lock.json
+         766  2021-01-02 20:24  ./client/package.json
+        2653  2020-12-29 21:51  ./client/package.json_log.txt
+           0  2020-12-29 17:56  ./client/public
+        3870  1985-10-26 04:15  ./client/public/favicon.ico
+        1721  1985-10-26 04:15  ./client/public/index.html
+        5347  1985-10-26 04:15  ./client/public/logo192.png
+        9664  1985-10-26 04:15  ./client/public/logo512.png
+         492  1985-10-26 04:15  ./client/public/manifest.json
+          67  1985-10-26 04:15  ./client/public/robots.txt
+        3369  1985-10-26 04:15  ./client/README.md
+           0  2020-12-29 18:29  ./client/src
+         962  2020-12-29 22:09  ./client/src/App.js
+         100  2020-12-28 10:03  ./client/src/App_v0.js
+         460  2020-12-29 22:09  ./client/src/App_v1.js
+         962  2020-12-29 22:09  ./client/src/App_v3.js
+           0  2020-12-29 17:56  ./client/src/components
+         417  2020-10-06 14:33  ./client/src/components/PostCreate.js
+         446  2020-10-06 14:33  ./client/src/components/PostEdit.js
+         472  2020-10-06 14:33  ./client/src/components/PostList.js
+         335  2020-10-06 14:33  ./client/src/components/UserCreate.js
+         364  2020-10-06 14:33  ./client/src/components/UserEdit.js
+         467  2020-10-06 14:33  ./client/src/components/UserList.js
+         366  1985-10-26 04:15  ./client/src/index.css
+         500  1985-10-26 04:15  ./client/src/index.js
+         362  1985-10-26 04:15  ./client/src/reportWebVitals.js
+      167775  2020-12-29 21:53  ./package-lock.json
+         449  2021-01-02 20:28  ./package.json
+        2357  2020-12-29 21:20  ./React-Admin-app8b_v01229-Filelist.txt
+           0  2020-12-29 22:10  ./server
+          67  2020-12-29 18:14  ./server/.env
+         261  2020-12-29 21:15  ./server/Client-Proxy-URL.txt
+         664  2020-12-29 22:10  ./server/db.json
+         249  2021-01-02 20:26  ./server/package.json
+          97  2020-10-06 14:33  ./server/range.js
+           0  2020-12-29 21:07  ./_3
+           0  2020-10-04 14:51  ./_3/!3)_Runtime Files for IODD's React-Admin Apps on rm212d-C, Master Version
+           0  2020-12-29 17:53  ./_3/NJSs
+        1472  2020-11-17 19:16  ./_3/NJSs/testAsync.njs
+         926  2020-11-18 06:37  ./_3/NJSs/testReact-Fetch.njs
