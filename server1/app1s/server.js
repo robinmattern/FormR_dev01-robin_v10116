@@ -1,10 +1,14 @@
    const    express     =  require("express");
+// const    crud, { sequelizeCrud } = require( 'express-sequelize-crud' ) // .(10103.03.2)
+// const  { User }      = require( './models' )                           // .(10103.03.2)
+
    const    bodyParser  =  require("body-parser");
    const    cors        =  require("cors");
 
 // -- -----------------------------------------------------------------------------------------------
 
-   const    app         =  express();
+// const    app         =  express();
+   const    app         =  new express();
 
             setEnv(); // .(01012.01.1 RAM My way)
 
@@ -29,38 +33,45 @@
             app.use( bodyParser.json( ) );                           // parse requests of content-type - application/json
             app.use( bodyParser.urlencoded( { extended: true } ) );  // parse requests of content-type - application/x-www-form-urlencoded
 
-      const db = require("./api/models");                            // database
+      const db = require("./api/models/index.js");                   // database
 
             db.sequelize.sync();
 //          db.sequelize.sync( { force: true } ).then( () => {       // force: true will drop the table if it already exists
 //              console.log( "Drop and Resync Database with { force: true }" );
 //              initial();
 //              } );
+ 
 // -----------------------------------------------------------
 
             app.get( "/", ( req, res ) => {
               
-            var aApp = __dirname  // simple route
-                .split(   /[\/\\\\]/)
-                .splice(  -2, 2)
-                .join(    "/" );  // .(01012.02.1 RAM)
-                res.json( { message: `Welcome to FormR Server1 ${aApp} application.` }); // .(01012.02.2)
-                } );
+        var aApp = __dirname  // simple route
+               .split(   /[\/\\\\]/)
+               .splice(  -2, 2)
+               .join(    "/" );  // .(01012.02.1 RAM)
+                res.json( { message: `Welcome to FormR Server1 ${aApp} application.` });     // .(01012.02.2)
+  
+                } ); // eof app.get( '/', function )
 // -----------------------------------------------------------
 
-//    require( "./api/routes/auth.routes"           )( app); // app routes
-      require( "./api/routes/user.routes"           )( app );
+//          app.use( crud( '/admin/users', sequelizeCrud( User ) ) )                         // .(10103.03.1 RAM) 
+       var  setAPIroute  =  require( './api/routes/api.routes.js' )                           // .(10106.02.1 RAM Use to set all routes)
+            setAPIroute( app, 'users', 'user.controller.js' ); // .(10106.02.1 RAM i.e. the name of the controller file: user.controller.js)
+//          setAPIroute( app, 'roles', 'role.controller.js' ); // .(10106.02.2)
+
+//    require( "./api/routes/auth.routes"           )( app );  // app routes
+//    require( "./api/routes/user.routes.js"        )( app );
 //    require( "./api/routes/role.routes"           )( app );
 //    require( "./api/routes/configuration.routes"  )( app );
 //    require( "./api/routes/lookup.routes"         )( app );
 //    require( "./api/routes/roles_tables.routes"   )( app );
 //    require( "./api/routes/user_roles.routes"     )( app );
-//    require( "./api/routes/tutorial.routes"       )( app ); // .(01012.03.1 RAM Add Tutorial routes)
-//    require( "./api/routes/table.routes"          )( app ); // .(01115.03.1 RAM Add Table routes)
-//    require( "./api/routes/project.routes"        )( app ); // .(01115.03.1 RAM Add Project routes)
-//    require( "./api/routes/member.routes"         )( app ); // .(01028.03.1 BT  Add Members_project routes)
-//    require( "./api/routes/members_project.routes")( app ); // .(01028.03.1 BT  Add Members_project routes)
-//    require( "./api/routes/board.routes"          )( app ); // .(01119.01.8 RAM Add Board routes)
+//    require( "./api/routes/tutorial.routes"       )( app );  // .(01012.03.1 RAM Add Tutorial routes)
+//    require( "./api/routes/table.routes"          )( app );  // .(01115.03.1 RAM Add Table routes)
+//    require( "./api/routes/project.routes"        )( app );  // .(01115.03.1 RAM Add Project routes)
+//    require( "./api/routes/member.routes"         )( app );  // .(01028.03.1 BT  Add Members_project routes)
+//    require( "./api/routes/members_project.routes")( app );  // .(01028.03.1 BT  Add Members_project routes)
+//    require( "./api/routes/board.routes"          )( app );  // .(01119.01.8 RAM Add Board routes)
 
       const PORT = process.env.PORT || 8080; // set port, listen for requests
 

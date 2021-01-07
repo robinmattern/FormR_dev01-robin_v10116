@@ -40,21 +40,14 @@ const Sequelize =  require( 'sequelize' );
       ,   pSConfig
           )
 
-// var UserModel           =  require( "./user.model.js" )                                             // .(10103.02.6)
-
 // ------------------------------------------------------------------------------------------
 
-/*const db = {};                                                                                        //#.(10103.02.7)
+  const db = {};
 
-        db.Sequelize        =  Sequelize;                                                               //#.(10103.02.7)
-        db.sequelize        =  sequelize;                                                               //#.(10103.02.7)
-*/
-    var db 		              = { sequelize: sequelize, Sequelize: Sequelize }                            // .(10103.02.7)
+        db.Sequelize        =  Sequelize;
+        db.sequelize        =  sequelize;
 
-//      db.user             =  require( "../models/user.model.js"            )( sequelize, Sequelize ); //#.(10103.02.8)  
-//      db.user             =  UserModel( sequelize, Sequelize );                                       //#.(10103.02.8)
-        db.user             =  require( "./user.model.js" )                                             // .(10103.02.8)
-
+//      db.user             =  require( "../models/user.model.js"            )( sequelize, Sequelize ); // .(10103.02.3)
 /*      db.role             =  require( "../models/role.model.js"            )( sequelize, Sequelize );
         db.configurations   =  require( "../models/switch.model.js"          )( sequelize, Sequelize );
         db.lookups          =  require( "../models/lookup.model.js"          )( sequelize, Sequelize );
