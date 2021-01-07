@@ -1,9 +1,8 @@
 {
-  "name": "App9b Server",
+  "name": "bradtraversy_react-admin_server2-app7s",
   "version": "1.0.0",
   "description": "",
-  "dependencies": {
-  },
+  "dependencies": { },
   "scripts": {
     "start": "json-server --watch ./api/models/db.json --port 55307 --routes ./api/models/routes.json --middlewares ./api/models/range.js"
   },

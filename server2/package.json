@@ -1,5 +1,6 @@
 {
-  "name": "App8b",
+  "name": "bradtraversy_react-admin_server2-apps",
+  "proxy": "http://127.0.0.1:55307",
   "version": "1.0.0",
   "description": "",
   "dependencies": {
@@ -7,11 +8,11 @@
     "content-range": "^1.1.0",
     "json-server": "^0.16.3"
   },
-  "scripts": {
-    "server": "json-server --watch ./server/db.json --port 5000 --middlewares ./server/range.js",
-    "client": "npm start --prefix ./client",
-    "both": "concurrently npm:server npm:client"
-  },
+  "scripts": 
+   { "server": "json-server --watch  ./app7s/api/models/db.json  --port 55307  --routes ./app7s/api/models/routes.json  --middlewares ./app7s/api/models/range.js"
+   , "client": "npm  start  --prefix ./client/app9c"
+   , "both": "concurrently  npm:server npm:client"
+      },
   "keywords": [],
   "author": "",
   "license": "ISC"
