@@ -28,7 +28,7 @@ Setup Instructions for VM with MySQL on Vultr
      $ mysql --version
        mysql  Ver 14.14 Distrib 5.7.32, for Linux (x86_64) using  EditLine wrapper
       ```
-    [![Install MySQL](images/et0303-01_Install-MySQL.png#img1)](images/et0303-01_Install-MySQL.mp4  "Install MySQL")
+    [![Install MySQL](./images/et0303-01_Install-MySQL.png#img1)](./images/et0303-01_Install-MySQL.mp4  "Install MySQL")
 
 
 ### 2. Secure MySQL  
