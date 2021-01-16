@@ -9,7 +9,7 @@
          margin:       15px 0px 15px 40px;    /* top, right, bottom, left */
          box-shadow:   5px 10px 12px  4px #888888;
          }
-
+   
     img[src*="#img2"] {
          width:        500px;
          margin:       15px 0px 15px 40px;    /* top, right, bottom, left */
