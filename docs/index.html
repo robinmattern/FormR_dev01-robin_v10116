@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
-</head>
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify =
-     {  el          : '#app'
-     ,  repo        : 'https://github.com/robinmattern/FormR'
-//   ,  homepage    : './README.md'
-//   ,  homepage    : 'https://raw.githubusercontent.com/docsifyjs/docsify/master/README.md'
-//   ,  homepage    : 'https://raw.githubusercontent.com/robinmattern/FormR/master/README.md'
-//   ,  homepage    : 'https://raw.githubusercontent.com/robinmattern/FormR/master/_docs/README.md'
-     ,  loadSidebar :  true
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+    <link rel="stylesheet" href="theme-custom.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify =
+       {  el            : '#app'
+       ,  repo          : 'https://github.com/robinmattern/FormR'
+       ,  homepage      : './README.md'
+//     ,  homepage      : 'https://raw.githubusercontent.com/docsifyjs/docsify/master/README.md'
+//     ,  homepage      : 'https://raw.githubusercontent.com/robinmattern/FormR/master/README.md'
+//     ,  homepage      : 'https://raw.githubusercontent.com/robinmattern/FormR/master/_docs/README.md'
+       ,  loadSidebar   :  true
+//     ,  noCompileLinks:['images/.*', '*.assets/.*' ] // No Workie: invalid regualr expression, noting to repeat
+//     ,  noCompileLinks:['images/.*', '.*assets/.*' ] // Removes bullet
+//     ,  noCompileLinks:['images/.*'                ] // Doesn't catch images in subfolder
+       ,  noCompileLinks:['.*images/.*'                ] // Doesn't catch images in subfolder
+       ,  externalLinkTarget: '_self'
         }
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-</body>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  </body>
 </html>
