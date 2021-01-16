@@ -1,25 +1,25 @@
 
 <style>
     body { font-size:  12pt; }  /* 10pt is the default size */
-    p  { line-height: 1.2em; }  /* 1.4em is the default line-height */    
-    p  { margin:        0em; }  /* .5em is the default top and bottom margin */    
+    p  { line-height: 1.2em; }  /* 1.4em is the default line-height */
+    p  { margin:        0em; }  /* .5em is the default top and bottom margin */
 
-    img[src*="#img1"] { 
-         width:        600px; 
+    img[src*="#img1"] {
+         width:        600px;
          margin:       15px 0px 15px 40px;    /* top, right, bottom, left */
-         box-shadow:   5px 10px 12px  4px #888888;        
+         box-shadow:   5px 10px 12px  4px #888888;
          }
 
-    img[src*="#img2"] { 
-         width:        500px; 
+    img[src*="#img2"] {
+         width:        500px;
          margin:       15px 0px 15px 40px;    /* top, right, bottom, left */
-         box-shadow:   5px 10px 12px  4px #888888;        
+         box-shadow:   5px 10px 12px  4px #888888;
         }
 </style>
 
 Setup Instructions for VM with MySQL on Vultr
 
-### 1. Install MySQL  
+### 1. Install MySQL
 
  1. Install MySQL after first updating the APT Package catalog. When the installations is complete, check the version to see if it installed properly.
      ```
@@ -29,23 +29,24 @@ Setup Instructions for VM with MySQL on Vultr
        mysql  Ver 14.14 Distrib 5.7.32, for Linux (x86_64) using  EditLine wrapper
       ```
     [![Install MySQL](images/et0303-01_Install-MySQL.png#img1)](images/et0303-01_Install-MySQL.mp4  "Install MySQL")
+    - [Install MySQL Video] (images/et0303-01_Install-MySQL.mp4 "Install MySQL Video")
+    - [Run first setup script] (images/et0302-03_Run-first-setup-script.png "Run first setup script")
 
-
-### 2. Secure MySQL  
+### 2. Secure MySQL
 
  1. Lock down MySQL
-    Running this script will ask you to 
-      - Enter a "password validation policy level": 2 
+    Running this script will ask you to
+      - Enter a "password validation policy level": 2
       - Enter a password for the user, root, to login to MySQL: Washington!1234
       - Remove anonymous users? Yes
       - Disallow root login remotely? No (Yes on a production server)
       - Remove test database and access to it? No (ditto)
-      - Reload privilege tables now? Yes 
+      - Reload privilege tables now? Yes
 
     ```
     sudo mysql_secure_installation
     ```
-    [![Secure MySQL](images/et0303-02_Secure-MySQL.png#img1)](images/et0303-02_Secure-MySQL.mp4  "Secure MySQL")    
+    [![Secure MySQL](images/et0303-02_Secure-MySQL.png#img1)](images/et0303-02_Secure-MySQL.mp4  "Secure MySQL")
 
 
  2. Enable root to use MySQL shell. First login doesn't require a password (?).
