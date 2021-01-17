@@ -4,7 +4,7 @@
     p  { margin:        0em; }  /* .5em is the default top and bottom margin */
 </style>
 
-## Hello from docs/README.html
+## Hello from docs/index.html
 
 This is a Docsify SPA (Single Page Application) containing Markdown pages
 describing the building of a VPS (Virtual Private Server) to run our FormR
@@ -31,3 +31,6 @@ by the owner of the repository.
 ![Setup Github Pages](images/et0101-01_Setup-Github-Pages.png "Setup Github Pages")
 
 
+And here is what Docsify looks like in GitHub Pages. 
+
+![FormR Github Page](images/et0101-02_FormR-Github-Page.png "FormR-Github-Page")
