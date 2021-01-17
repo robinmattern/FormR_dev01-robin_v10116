@@ -63,7 +63,7 @@ async function testAPI( aAPI, bSignIn, pData ) {
 
      if (bSignIn) {
          if (pData.UID) {                      await pTuts.testUser( '/api/test/user', pData.UID, pData.PWD ) }
-           else {                              await pTuts.testUser( '/api/test/user', 'mod',    '12345678' ) }
+           else {                              await pTuts.testUser( '/api/test/user', 'mod',    '!PassWord0' ) }
          }
 
      if (aAPI == 'signIn'   ) {                await pTuts.signIn( { username: pData.UID, password: pData.PWD } )
@@ -73,8 +73,8 @@ async function testAPI( aAPI, bSignIn, pData ) {
 
      if (aAPI == 'testAdmin') {        pData = await pMems.doAPI( 'get', '/test/admin', pData ) }
      if (aAPI == 'testAll'  ) {        pData = await pMems.doAPI( 'get', '/test/all'          ) }
-     if (aAPI == 'testUser' ) {        pData = await pTuts.testUser( '/api/test/user', 'mod',    '12345678' ) }
-     if (aAPI == 'testUser2') {                await pTuts.testUser( '/api/test/user', 'mod',    '12345678' )
+     if (aAPI == 'testUser' ) {        pData = await pTuts.testUser( '/api/test/user', 'mod',    '!PassWord0' ) }
+     if (aAPI == 'testUser2') {                await pTuts.testUser( '/api/test/user', 'mod',    '!PassWord0' )
                                        pData = await pTuts.testUser( '/api/test/user' )
                                        }
      if (aAPI == 'showAll'  ) {        pData = await pTuts.showAll(  ) }

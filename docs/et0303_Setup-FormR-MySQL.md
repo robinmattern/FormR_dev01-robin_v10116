@@ -40,7 +40,7 @@ Setup Instructions for VM with MySQL on Vultr
  1. Lock down MySQL
     Running this script will ask you to
       - Enter a "password validation policy level": 2
-      - Enter a password for the user, root, to login to MySQL: xxxxxx
+      - Enter a password for the user, root, to login to MySQL: !PassWord1
       - Remove anonymous users? Yes
       - Disallow root login remotely? No (Yes on a production server)
       - Remove test database and access to it? No (ditto)
@@ -62,7 +62,7 @@ Setup Instructions for VM with MySQL on Vultr
 
     ![Mysql-setup-select-user-empty-root](images/et0303-03_Mysql-setup-select-user-empty-root.png#img1 "Mysql-setup-select-user-empty-root")
 
-     mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'xxxxxxxx';
+     mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '!PassWord1';
      mysql> FLUSH PRIVILEGES;
      mysql> SELECT user,authentication_string,plugin,host FROM mysql.user;
 
@@ -122,7 +122,7 @@ Setup Instructions for VM with MySQL on Vultr
     sudo mysql -p
         password: xxxxxxxxxx
 
-    mysql> CREATE USER 'admin'@'%' IDENTIFIED WITH mysql_native_password BY 'Washington!12345';
+    mysql> CREATE USER 'admin'@'%' IDENTIFIED WITH mysql_native_password BY '!PassWord3';
     mysql> GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%';
     mysql> SELECT user,authentication_string,plugin,host FROM mysql.user;
 

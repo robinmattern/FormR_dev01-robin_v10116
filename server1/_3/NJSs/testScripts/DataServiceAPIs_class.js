@@ -186,7 +186,7 @@ async getAPI( aRoute, aToken, pBody ) {
          pErr.msg       =  aMsg
          pErr.url       =  pError.config.url       // :    'http://localhost:50315/api/auth/signin',
          pErr.method    =  pError.config.method    // :    'post',
-         pErr.data      =  pError.config.data      // : '{ "username":"mod","password":"12345678"}',
+         pErr.data      =  pError.config.data      // : '{ "username":"mod","password":"!PassWord0"}',
          pErr.headers   =  pError.config.headers   // :  { ... }
 
          console.log( "ERROR:", pErr )

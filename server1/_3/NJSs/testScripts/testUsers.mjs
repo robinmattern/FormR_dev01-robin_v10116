@@ -24,11 +24,11 @@ import   Sequelize        from    'sequelize';
 
 //       testAPI( 'signIn'          , 1, { UID: 'user',  PWD: '1234'     } );      // What is the User's password?
 // **    ERROR: {msg: 'Error Request failed with status code 404:
-//                     User Not found.', url: 'http://localhost:50315/api/auth/signin', method: 'post', data: '{"username":"user","password":"12345678"}', headers: {…}}
+//                     User Not found.', url: 'http://localhost:50315/api/auth/signin', method: 'post', data: '{"username":"user","password":"!PassWord0"}', headers: {…}}
 
 //       testAPI( 'signIn'          , 1, { UID: 'bruce', PWD: '1234678'  } );      // What is the Bruce's password?
 // **    ERROR: {msg: 'Error Request failed with status code 401:
-//                     Invalid Password!', url: 'http://localhost:50315/api/auth/signin', method: 'post', data: '{"username":"bruce","password":"1234678"}', headers: {…}}
+//                     Invalid Password!', url: 'http://localhost:50315/api/auth/signin', method: 'post', data: '{"username":"bruce","password":"!PassWord0"}', headers: {…}}
 
 //       testAPI( 'testAll'                               );
 //       testAPI( 'testMod'                               );  // ERROR: No token present for route: /test/mod
